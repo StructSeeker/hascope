@@ -1,5 +1,5 @@
 ## Introduction 
-hascope is an implementation of Kaleidoscope, the famous toy language of llvm, an expression language with minimal type and control flow.
+hascope is an implementation of Kaleidoscope, the famous toy language of llvm, an expression language with simple control flow and types.
 
 ## Notes
 Quite old GHC version (8.10.*) is required because the used llvm binding is no longer actively maintained and not compatible with modern GHC due to bytestring issues. I tried but failed to find an up-to-date llvm binding
