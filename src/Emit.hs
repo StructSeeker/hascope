@@ -1,8 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-{-|
-
-This module is the semantic analyzer and code generator that translates Kaleidoscope
+{-| This module is the semantic analyzer and code generator that translates Kaleidoscope
 Abstract Syntax Trees (AST) into LLVM intermediate representation (IR).
 
 The module performs Top-level compilation via 'codegenTop' and expression code generation via 'cgen':

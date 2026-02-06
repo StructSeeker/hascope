@@ -1,17 +1,9 @@
 {-|
-Module      : Main
-Description : Entry point for the Kaleidoscope compiler and REPL
-Copyright   : (c) 2025
-License     : GPL-2
-
 This module serves as the main entry point for the Kaleidoscope compiler project.
 Kaleidoscope is a minimal toy language that compiles to LLVM intermediate representation.
 This application supports both:
   1. Interactive REPL mode - for testing and ad-hoc compilation
   2. File compilation mode - for compiling Kaleidoscope source files
-
-The compilation pipeline is:
-  Source Code -> Lexer -> Parser -> AST -> Codegen -> LLVM IR -> JIT Execution
 
 Example usage:
   Interactive: @hascope@
