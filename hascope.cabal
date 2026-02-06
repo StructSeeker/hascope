@@ -1,0 +1,34 @@
+name:                hascope
+version:             0.1.0.0
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  -- The core logic goes here
+  hs-source-dirs:      src
+  exposed-modules:
+    Codegen
+    Emit
+    JIT
+    Lexer
+    Parser
+    Syntax
+  build-depends:
+      base                 >= 4.7 && < 5
+    , haskeline            >= 0.7.1.2
+    , llvm-hs              >= 4.0.0.0
+    , llvm-hs-pure         >= 4.0.0.0
+    , parsec               >= 3.1
+    , containers           >= 0.4
+    , mtl                  >= 2.1.3
+    , transformers         >= 0.3.0.0 && < 0.6
+  default-language:    Haskell2010
+
+executable hascope
+  -- The CLI wrapper goes here
+  main-is:             Main.hs
+  hs-source-dirs:      app
+  build-depends:
+      base
+    , hascope        
+  default-language:    Haskell2010
