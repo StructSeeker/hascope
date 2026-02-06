@@ -26,7 +26,7 @@ The compiler supports both JIT execution and compilation modes:
 cabal run hascope
 
 # Compile a source file
-cabal run hascope -- input.ks -o output
+cabal run hascope -- input.ks -o output.ll
 ```
 
 ### Example
